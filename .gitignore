@@ -25,3 +25,7 @@ reports/
 # IDE
 .vscode/
 .idea/
+
+# Personal/private notes
+README_FOR_ME.md
+README_FOR_ME.local.md
