@@ -4,6 +4,13 @@ from compliance_llm.pipeline.evaluation import evaluate
 from compliance_llm.pipeline.inference import InferenceEngine
 
 s = get_settings()
-engine = InferenceEngine(s.artifacts_dir)
-print(engine.qa("What are AML obligations?", top_k=3))
-print(evaluate(s.data_dir, s.artifacts_dir))
+baseline = InferenceEngine(s.artifacts_dir, mode="baseline", data_dir=s.data_dir)
+print(baseline.qa("What are AML obligations?", top_k=3))
+print(evaluate(s.data_dir, s.artifacts_dir, mode="baseline"))
+
+try:
+    advanced = InferenceEngine(s.artifacts_dir, mode="advanced", data_dir=s.data_dir)
+    print(advanced.qa("What are AML obligations?", top_k=3))
+    print(evaluate(s.data_dir, s.artifacts_dir, mode="advanced"))
+except Exception as exc:
+    print("Advanced mode unavailable:", exc)

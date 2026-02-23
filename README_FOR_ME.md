@@ -36,3 +36,16 @@ End-to-end compliance NLP platform with four capabilities:
 3. Use LLM answer generation with strict citation grounding and answerability checks.
 4. Add active learning and human-in-the-loop labeling for hard classes.
 5. Add MLflow, DVC, and CI/CD model promotion gates.
+
+## Implemented advanced mode (2026-02-23)
+1. Added zero-shot classifier (`facebook/bart-large-mnli`) for fast multi-label coverage.
+2. Added transformer NER (`dslim/bert-base-NER`) for richer entities.
+3. Added dense retrieval (`sentence-transformers/all-MiniLM-L6-v2`) for semantic search.
+4. Added grounded QA (`deepset/roberta-base-squad2`) over retrieved evidence.
+5. Added side-by-side benchmark script: `scripts/run_sota_benchmark.py`.
+
+## Files to run for comparison
+1. `python scripts/train.py`
+2. `python scripts/evaluate.py --mode baseline`
+3. `python scripts/evaluate.py --mode advanced`
+4. `python scripts/run_sota_benchmark.py`
