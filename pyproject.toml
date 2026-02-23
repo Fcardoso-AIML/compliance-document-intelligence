@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compliance-llm"
+version = "0.1.0"
+description = "Compliance Document Intelligence: classification, risk scoring, and RAG QA"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Francisco Cardoso"}]
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

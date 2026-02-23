@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  compliance-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - COMPLIANCE_DATA_DIR=data
+      - COMPLIANCE_ARTIFACTS_DIR=artifacts
+      - COMPLIANCE_REPORTS_DIR=reports

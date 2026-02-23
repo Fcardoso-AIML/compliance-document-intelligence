@@ -1,0 +1,5 @@
+{"doc_id": "d1", "text": "GDPR requires organizations to report personal data breaches quickly and document controls for privacy risk.", "labels": ["PRIVACY", "REPORTING"]}
+{"doc_id": "d2", "text": "AML policy enforces KYC checks, transaction monitoring, and suspicious activity reporting for financial institutions.", "labels": ["AML", "REPORTING"]}
+{"doc_id": "d3", "text": "EU AI Act introduces risk classes and governance requirements for high-risk AI systems.", "labels": ["AI_ACT", "RISK"]}
+{"doc_id": "d4", "text": "ESG reports should disclose climate metrics and governance controls for sustainability.", "labels": ["ESG", "REPORTING"]}
+{"doc_id": "d5", "text": "FATF guidance highlights sanctions screening and beneficial ownership obligations to reduce AML exposure.", "labels": ["AML", "RISK"]}
